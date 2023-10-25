@@ -8,8 +8,7 @@ In section 7.1.1 of the textbook (https://www.cs.utexas.edu/users/flame/laff/ala
 
 Let $\phi_i$ be the value of $f(x,y)$ at the mesh point $i$.  One can approximate
 
-$
-x-\mathrm{dimension}:\;\frac{\partial^2 u\left(x,y,z\right)}{\partial x^2 }\approx \frac{u\left(x-h,y,z\right)-2u\left(x,y,z\right)+u\left(x+h,y,z\right)}{h^2 }$
+$x-\mathrm{dimension}:\;\frac{\partial^2 u\left(x,y,z\right)}{\partial x^2 }\approx \frac{u\left(x-h,y,z\right)-2u\left(x,y,z\right)+u\left(x+h,y,z\right)}{h^2 }$
 
 $y-\mathrm{dimension}:\;\frac{\partial^2 u\left(x,y,z\right)}{\partial y^2 }\approx \frac{u\left(x,y-h,z\right)-2u\left(x,y,z\right)+u\left(x,y+h,z\right)}{h^2 }$
 
