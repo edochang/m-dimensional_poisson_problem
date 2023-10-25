@@ -8,11 +8,12 @@ In section 7.1.1 of the textbook (https://www.cs.utexas.edu/users/flame/laff/ala
 
 Let $\phi_i$ be the value of $f(x,y)$ at the mesh point $i$.  One can approximate
 
-$\begin{array}{l}
-x-\mathrm{dimension}:\;\frac{\partial^2 u\left(x,y,z\right)}{\partial x^2 }\approx \frac{u\left(x-h,y,z\right)-2u\left(x,y,z\right)+u\left(x+h,y,z\right)}{h^2 }\\
-y-\mathrm{dimension}:\;\frac{\partial^2 u\left(x,y,z\right)}{\partial y^2 }\approx \frac{u\left(x,y-h,z\right)-2u\left(x,y,z\right)+u\left(x,y+h,z\right)}{h^2 }\\
-z-\mathrm{dimension}:\;\frac{\partial^2 u\left(x,y,z\right)}{\partial z^2 }\approx \frac{u\left(x,y,z-h\right)-2u\left(x,y,z\right)+u\left(x,y,z+h\right)}{h^2 }
-\end{array}$
+$
+x-\mathrm{dimension}:\;\frac{\partial^2 u\left(x,y,z\right)}{\partial x^2 }\approx \frac{u\left(x-h,y,z\right)-2u\left(x,y,z\right)+u\left(x+h,y,z\right)}{h^2 }$
+
+$y-\mathrm{dimension}:\;\frac{\partial^2 u\left(x,y,z\right)}{\partial y^2 }\approx \frac{u\left(x,y-h,z\right)-2u\left(x,y,z\right)+u\left(x,y+h,z\right)}{h^2 }$
+
+$z-\mathrm{dimension}:\;\frac{\partial^2 u\left(x,y,z\right)}{\partial z^2 }\approx \frac{u\left(x,y,z-h\right)-2u\left(x,y,z\right)+u\left(x,y,z+h\right)}{h^2 }$
 
 so that
 
@@ -20,10 +21,7 @@ $-\frac{\partial^2 u}{{\partial x}^2 }-\frac{\partial^2 u}{{\partial y}^2 }-\fra
 
 becomes
 
-$\begin{array}{l}
-\frac{-u\left(x-h,y,z\right)+2u\left(x,y,z\right)-u\left(x+h,y,z\right)}{h^2 }+\frac{-u\left(x,y-h,z\right)+2u\left(x,y,z\right)-u\left(x,y+h,z\right)}{h^2 }+\\
-\frac{-u\left(x,y,z-h\right)+2u\left(x,y,z\right)-u\left(x,y,z+h\right)}{h^2 }=f\left(x,y,z\right)
-\end{array}$
+$\frac{-u\left(x-h,y,z\right)+2u\left(x,y,z\right)-u\left(x+h,y,z\right)}{h^2 }+\frac{-u\left(x,y-h,z\right)+2u\left(x,y,z\right)-u\left(x,y+h,z\right)}{h^2 }+\frac{-u\left(x,y,z-h\right)+2u\left(x,y,z\right)-u\left(x,y,z+h\right)}{h^2 }=f\left(x,y,z\right)$
 
 or, equivalently,
 
